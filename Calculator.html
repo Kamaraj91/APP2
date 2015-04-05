@@ -1,36 +1,31 @@
-    <html>
-	<body background="imgs/Penguins.png">
-	
-		   <head> 
-		  
-		      <title>Calculator</title>
-		      <script type = "text/javascript">
-		       var num1;
-			   var num2;
-			   var sum;
-			   var number1;
-			   var number2;
-			   
-			   number1= window.prompt("Please enter number 1");
-			   console.log(number1);
-			   
-			   num1=parseInt(number1);
-			   
-			   number2= window.prompt("Please enter number 2");
-			   
-			   num2=parseInt(number2);
-			   
-			   
-			   sum=num1 + num2 ;
-			  
-			   document.writeln("The sum is  "+sum);
-			  
-		      </script>
-		   </head>
-		   <body>  
-		   <center>
-		      <p>Click Refresh (or Reload) to run this script again.</p>
-			</center>			  
-	   </body>
-	</html>
+<html>
+<head>
+<title>HTML Calculator</title>
+</head>
+<body bgcolor= "#000000" text= "gold">
+<form name="calculator" >
+<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+<input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+<input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+ 
+<input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+<input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+<input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+ 
+<input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+<input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+<input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+<input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+<input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+ 
+<input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+<input type="reset" value="Reset">
+<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+<br>Solution is <input type="textfield" name="ans" value="">
+</form>
+ 
+</body>
+</html>
 
